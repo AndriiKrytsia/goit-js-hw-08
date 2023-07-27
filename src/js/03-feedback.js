@@ -40,8 +40,10 @@ function onFormSubmit(e) {
 
   const formData = {
     email: emailValue,
-    message: messageValue
+    message: messageMessage
   };
+
+  console.log(formData);
   
   e.currentTarget.reset();
   localStorage.removeItem('feedback-form-state');
